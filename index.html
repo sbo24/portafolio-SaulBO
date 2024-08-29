@@ -22,7 +22,7 @@
                 aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="offcanvas offcanvas-end" id="sidebarNav">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasLabel">Menú</h5>
@@ -63,56 +63,195 @@
 
 
     <!-- Sobre mí -->
-    <section id="sobre-mi" class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-md-6" data-aos="fade-right">
-                <img src="img/foto-perfil.jpg" alt="Foto de [Tu Nombre]" class="img-fluid rounded-circle shadow-lg">
-            </div>
-            <div class="col-md-6" data-aos="fade-left">
-                <h2 class="section-title">Sobre mí</h2>
-                <p>Soy un apasionado desarrollador web con experiencia en crear soluciones innovadoras. Mi enfoque está
-                    en la combinación perfecta de diseño y funcionalidad.</p>
-                <a href="estudios.html" class="btn btn-outline-primary">Ver más</a>
+<section id="sobre-mi" class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+            <img src="img/foto-perfil.jpg" alt="Foto de Saul Barrajón" class="img-fluid rounded-circle shadow-lg">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+            <h2 class="section-title">Sobre mí</h2>
+            <p class="intro-text">
+                Soy un apasionado desarrollador web con experiencia en crear soluciones innovadoras. Mi enfoque está en
+                la combinación perfecta de diseño y funcionalidad.
+            </p>
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#moreContent" aria-expanded="false" aria-controls="moreContent">
+                Ver más
+            </button>
+            <div class="collapse mt-3" id="moreContent">
+                <div class="card card-body">
+                    <h4>Educación</h4>
+                    <ul>
+                        <li><strong>De 1ºESO a 3ºESO:</strong> IES Cañada Real, Valmojado (2016-2019)</li>
+                        <li><strong>4ºESO:</strong> IES Juan De Padilla, Illescas (2019-2020)</li>
+                        <li><strong>Grado Medio en Técnico en Sistemas Microinformáticos y Redes:</strong> IES Las
+                            Salinas, Seseña Nuevo (2020-2022)</li>
+                        <li><strong>Grado Superior en Desarrollo de Aplicaciones Web:</strong> IES Azarquiel, Toledo
+                            (2022-2024)</li>
+                    </ul>
+                    <h4>Datos Personales</h4>
+                    <ul>
+                        <li><strong>Fecha de nacimiento:</strong> 31/01/2004</li>
+                        <li><strong>Correo electrónico:</strong> <a
+                                href="mailto:saulbarrajon@gmail.com">saulbarrajon@gmail.com</a></li>
+                        <li><strong>Carnet de coche:</strong> B (Vehículo propio)</li>
+                    </ul>
+                    <h4>Habilidades y Tecnologías</h4>
+                    <ul>
+                        <li><strong>SQL:</strong> ORACLE, MARIADB</li>
+                        <li><strong>PHP:</strong> LARAVEL</li>
+                        <li><strong>HTML5, CSS3, XML</li>
+                        <li><strong>JavaScript:</strong> REACT, VUE</li>
+                        <li><strong>JAVA</li>
+                        <li><strong>Bootstrap</li>
+                        <li><strong>Cloud:</strong> ORACLE CLOUD, AZURE, CLOUDING</li>
+                        <li><strong>Otras herramientas:</strong> POSTMAN, BRUNO</li>
+                        <li><strong>Sistemas operativos:</strong> LINUX</li>
+                    </ul>
+                    <h4>Idiomas</h4>
+                    <ul>
+                        <li><strong>Español:</strong> Nativo</li>
+                        <li><strong>Inglés:</strong> Medio</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Proyectos -->
     <section id="proyectos" class="container py-5">
         <h2 class="text-center section-title" data-aos="fade-up">Proyectos Destacados</h2>
         <div class="row mt-5">
+            <!-- Proyecto 1: Hierro Duro -->
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card border-0 shadow-sm">
-                    <img src="img/proyectos/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/logo.png" class="card-img-top w-25 mx-auto my-2" alt="Hierro Duro">
                     <div class="card-body">
-                        <h5 class="card-title">Proyecto 1</h5>
-                        <p class="card-text">Descripción breve del proyecto.</p>
-                        <a href="proyectos.html" class="btn btn-primary">Ver detalles</a>
+                        <h5 class="card-title">Hierro Duro</h5>
+                        <p class="card-text">Una base de datos de vehículos creada para gestionar mantenimientos y fichas
+                            técnicas.</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#project1"
+                            aria-expanded="false" aria-controls="project1">
+                            Ver detalles
+                        </button>
+                        <div class="collapse mt-3" id="project1">
+                            <div class="card card-body">
+                                <p><strong>Objetivo:</strong> Desarrollar una aplicación web para gestionar la base de datos
+                                    de vehículos y sus mantenimientos.</p>
+                                <p><strong>Tecnologías:</strong> PHP, Laravel, SQL, API REST.</p>
+                                <p><strong>Resultados:</strong> Aplicación funcional que permite la gestión completa de
+                                    vehículos, accesible mediante una API REST.</p>
+                                <a href="https://github.com/sbo24/TFG-HIERODURO" target="_blank"
+                                    class="btn btn-secondary mt-2">Ver en GitHub</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Proyecto 2: TheMealDB React -->
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card border-0 shadow-sm">
-                    <img src="img/proyectos/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                <div class="card border-0 shadow-lg">
+                    <img src="img/meal.png" class="card-img-top w-25 mx-auto my-2" alt="TheMealDB React">
                     <div class="card-body">
-                        <h5 class="card-title">Proyecto 2</h5>
-                        <p class="card-text">Descripción breve del proyecto.</p>
-                        <a href="proyectos.html" class="btn btn-primary">Ver detalles</a>
+                        <h5 class="card-title">TheMealDB React</h5>
+                        <p class="card-text">Aplicación desarrollada en React para consumir una API online de recetas.</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#project2"
+                            aria-expanded="false" aria-controls="project2">
+                            Ver detalles
+                        </button>
+                        <div class="collapse mt-3" id="project2">
+                            <div class="card card-body">
+                                <p><strong>Objetivo:</strong> Crear una aplicación en React que permita buscar y visualizar
+                                    recetas utilizando la API de TheMealDB.</p>
+                                <p><strong>Tecnologías:</strong> React, React Router.</p>
+                                <p><strong>Resultados:</strong> Aplicación interactiva para la búsqueda y visualización de
+                                    recetas con una interfaz de usuario amigable.</p>
+                                <a href="https://github.com/Atablo/TheMealDB-React" target="_blank"
+                                    class="btn btn-secondary mt-2">Ver en GitHub</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Proyecto 3: Juego en Java -->
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="card border-0 shadow-sm">
-                    <img src="img/proyectos/proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                <div class="card border-0 shadow-lg ">
+                    <img src="img/java.png" class="card-img-top w-25 mx-auto my-2" alt="Juego en Java">
                     <div class="card-body">
-                        <h5 class="card-title">Proyecto 3</h5>
-                        <p class="card-text">Descripción breve del proyecto.</p>
-                        <a href="proyectos.html" class="btn btn-primary">Ver detalles</a>
+                        <h5 class="card-title">Juego en Java</h5>
+                        <p class="card-text">Un juego de ahorcado desarrollado en Java como un pasatiempo.</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#project3"
+                            aria-expanded="false" aria-controls="project3">
+                            Ver detalles
+                        </button>
+                        <div class="collapse mt-3" id="project3">
+                            <div class="card card-body">
+                                <p><strong>Objetivo:</strong> Crear un juego interactivo en Java que implemente la lógica
+                                    del juego de ahorcado.</p>
+                                <p><strong>Tecnologías:</strong> Java.</p>
+                                <p><strong>Resultados:</strong> Juego funcional que pone a prueba las habilidades de
+                                    programación y lógica en Java.</p>
+                                <a href="https://github.com/sbo24/ahorcado" target="_blank"
+                                    class="btn btn-secondary mt-2">Ver en GitHub</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Experiencias Profesionales -->
+    <section id="experiencias" class="container py-5">
+        <h2 class="text-center section-title" data-aos="fade-up">Experiencias Profesionales</h2>
+        <div class="row mt-5">
+            <!-- Técnico en Sistemas Microinformáticos en Ayuntamiento de Illescas -->
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="experience-item">
+                    <h3 class="experience-title">Técnico en Sistemas Microinformáticos</h3>
+                    <p class="experience-company">Ayuntamiento de Illescas</p>
+                    <p class="experience-date">Marzo 2021 - Junio 2021</p>
+                    <p class="experience-description">
+                        <strong>Herramientas:</strong> Active Directory, Linux, Windows Server, WordPress.<br>
+                        Tres meses de prácticas como técnico informático controlando el servidor de Windows "Active
+                        Directory" y resolviendo incidencias diarias.
+                    </p>
+                </div>
+            </div>
+            <!-- Técnico en Sistemas Microinformáticos (Trabajo por Encargo) -->
+            <div class="col-md-6" data-aos="fade-left">
+                <div class="experience-item">
+                    <h3 class="experience-title">Técnico en Sistemas Microinformáticos</h3>
+                    <p class="experience-company">Trabajo por Encargo</p>
+                    <p class="experience-date">Julio 2019 - Presente</p>
+                    <p class="experience-description">
+                        <strong>Servicios:</strong> Montaje y mantenimiento, arreglos, actualizaciones, asesoría.<br>
+                        Trabajos a domicilio resolviendo problemas de software y hardware. Montaje, mantenimiento y puesta
+                        en marcha de equipos.
+                    </p>
+                </div>
+            </div>
+            <!-- Desarrollador Web en Sistemas ACR -->
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="experience-item">
+                    <h3 class="experience-title">Desarrollador Web</h3>
+                    <p class="experience-company">Sistemas ACR</p>
+                    <p class="experience-date">Marzo 2024 - Julio 2024</p>
+                    <p class="experience-description">
+                        <strong>Herramientas:</strong> SQL, PHP, Laravel, Vue, XAMPP, Plesk, JAVA, Spring Boot.<br>
+                        Desarrollo Web en Sistemas ACR, ofreciendo soluciones digitales en un proyecto de gestión de equipos
+                        realizado con Laravel. Realización de actualizaciones en la página oficial de la empresa utilizando
+                        técnicas con Laravel y PHP puro. Desarrollo de la base de datos, consumiéndola mediante ApiRest para
+                        obtener la información.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Contacto -->
     <section id="contacto" class="container py-5 text-center" data-aos="fade-up">

@@ -340,3 +340,72 @@
       color: var(--white);
       padding: 1rem 0;
   }
+
+
+  /* Estilo para la sección de "Experiencias Profesionales" */
+  #experiencias {
+      background-color: #f9f9f9;
+      /* Fondo ligero para la sección */
+      padding: 40px 0;
+      /* Espaciado superior e inferior */
+  }
+
+  .experience-item {
+      background-color: #ffffff;
+      /* Fondo blanco para cada elemento */
+      border-radius: 8px;
+      /* Bordes redondeados */
+      padding: 20px;
+      /* Espaciado interno */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* Sombra sutil */
+      margin-bottom: 20px;
+      /* Espacio entre los elementos */
+      transition: transform 0.3s, box-shadow 0.3s;
+      /* Transiciones suaves */
+  }
+
+  .experience-item:hover {
+      transform: translateY(-5px);
+      /* Eleva el elemento en hover */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      /* Sombra más pronunciada en hover */
+  }
+
+  .experience-title {
+      font-size: 1.5rem;
+      /* Tamaño grande para el título */
+      color: #343a40;
+      /* Color del texto */
+      font-weight: 700;
+      /* Negrita */
+      margin-bottom: 10px;
+      /* Espacio debajo del título */
+  }
+
+  .experience-company {
+      font-size: 1.1rem;
+      /* Tamaño de fuente ajustado */
+      color: #6c757d;
+      /* Color del texto */
+      margin-bottom: 5px;
+      /* Espacio debajo del nombre de la empresa */
+  }
+
+  .experience-date {
+      font-size: 1rem;
+      /* Tamaño de fuente ajustado */
+      color: #adb5bd;
+      /* Color del texto */
+      margin-bottom: 10px;
+      /* Espacio debajo de la fecha */
+  }
+
+  .experience-description {
+      font-size: 1rem;
+      /* Tamaño de fuente ajustado */
+      color: #495057;
+      /* Color del texto */
+  }
+
+  
